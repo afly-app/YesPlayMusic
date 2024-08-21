@@ -1,0 +1,12 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yesplaymusic-be-release
+  labels:
+    app: yesplaymusic-be-release
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yesplaymusic-be-release
